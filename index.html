@@ -5,24 +5,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Cat Tracker</title>
+  <title>Doggy Day Care</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
-  <main class="container">
-    <row>
-      <div class="col">
-        <img src="" alt="" />
+  <main class="container-fluid">
+    <header>
+      <h1><b>Dog</b></h1>
+    </header>
+    <section class="row" id="mainRow">
+      <div class="col-6">
+        <img id="dog-image" src="/assets/saddog.jpg" alt="Sad Dog" />
       </div>
-      <div class="col">
+      <div class="col-5">
         <div class="row">
           <div class="col">
-            <h1>Dog Name</h1>
-            <h2>Mood</h2>
-            <h2>Pets</h2>
+            <h1>Dog Name:</h1>
+            <h2>Mood:</h2>
+            <h2>Pets:</h2>
           </div>
           <div class="col">
             <h1>Mr. Kibbles</h1>
@@ -31,11 +34,11 @@
           </div>
         </div>
         <div class="row">
-          <div class="button btn-success" onclick="pet">Pets</div>
-          <div class="button btn-danger" onclick="dog">Nap Time</div>
+          <button id="pet-button" class="btn btn-info" onclick="pet()"> Pet Me! </button>
+          <button class="btn btn-danger" onclick="napTime()"> Nap Time! </button>
         </div>
       </div>
-    </row>
+      </row>
   </main>
   <script src="app.js"></script>
 </body>
