@@ -1,4 +1,45 @@
 body {
-  background-color: rgba(35, 67, 241, .5);
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+background-image: url("/assets/park.jpg");
+background-size: cover;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+display: flex;
+color: whitesmoke;
+}
+#nav1 {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  -moz-float-edge: fixed;
+  height: 100px;
+  margin-bottom: 200px;
+}
+#mainRow {
+  margin: 35px;
+}
+#dog-image {
+  outline-offset: 20px;
+  outline-color: beige;
+  outline-style: solid;
+  outline-width: 15px;
+  width: 550px;
+  height: 425px;
+  float: center;
+}
+#info {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: flex-start;
+  align-items: center;
+ 
+}
+h2 {
+line-height: 2.2;
+}
+#buttons {
+  display: flex;
+align-content: flex-end;
+justify-content: flex-end;
+
+}
+#btn {
+  margin-right: 20px;
 }
